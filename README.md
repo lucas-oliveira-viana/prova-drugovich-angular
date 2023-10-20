@@ -1,4 +1,4 @@
-### prova-drugovich-angular
+# prova-drugovich-angular
 
 ## Motivação
 
@@ -19,7 +19,7 @@ Ou, caso opte por executar esse projeto com docker, deve possui-lo no seu comput
 
 ## Instalação e Execução
 
-# Padrão
+### Padrão
 
 Clone este repositório:
 
@@ -46,7 +46,7 @@ ng serve
 
 Abra um navegador e acesse http://localhost:4200/ para visualizar a aplicação.
 
-# Docker
+### Docker
 
 Execute o comando ```docker-compose up``` para executar o projeto
 
