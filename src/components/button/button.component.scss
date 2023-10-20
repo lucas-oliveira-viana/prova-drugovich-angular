@@ -1,0 +1,16 @@
+:host {
+  width: fit-content;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: Monda, sans-serif;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

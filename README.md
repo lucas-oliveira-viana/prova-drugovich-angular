@@ -1,27 +1,53 @@
-# ProvaDrugovichAngular
+### prova-drugovich-angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+## Motivação
 
-## Development server
+Este é um projeto criado para uma das etapas do processo seletivo da empresa Drugovich.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Descrição
 
-## Code scaffolding
+Esta aplicação foi desenvolvida utilizando o Framework Angular na versão 16. Suas funcionalidades são: uma listagem paginada e um formulário de criação/edição de registro de clientes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Pré-requisitos
 
-## Build
+Antes de começar, certifique-se de atender aos seguintes requisitos:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Node.js instalado
+Angular CLI instalado: Você pode instalá-lo com o seguinte comando: npm install -g @angular/cli
 
-## Running unit tests
+Ou, caso opte por executar esse projeto com docker, deve possui-lo no seu computador.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalação e Execução
 
-## Running end-to-end tests
+# Padrão
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Clone este repositório:
 
-## Further help
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Navegue até o diretório do projeto:
+
+```bash
+cd prova-drugovich-angular
+```
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+ng serve
+```
+
+Abra um navegador e acesse http://localhost:4200/ para visualizar a aplicação.
+
+# Docker
+
+Execute o comando ```docker-compose up``` para executar o projeto
+
+Abra um navegador e acesse http://localhost:4200/ para visualizar a aplicação.

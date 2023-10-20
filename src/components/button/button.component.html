@@ -1,0 +1,9 @@
+<button (click)="handleClick($event)" [ngStyle]="style">
+  <app-icon-provider
+    *ngIf="icon.path"
+    [path]="icon.path"
+    [height]="icon.height"
+    [width]="icon.width"
+  />
+  <span>{{ label }}</span>
+</button>

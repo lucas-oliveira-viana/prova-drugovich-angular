@@ -1,0 +1,64 @@
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of getCurrentPageItems()">
+      <td class="row-name">{{ customer.name }}</td>
+      <td class="row-cnpj">
+        <span class="text-cnpj">{{ customer.cnpj | cnpjFormat }}</span>
+      </td>
+      <td class="row-status">
+        <div>
+          <div
+            class="status-circle"
+            [ngClass]="{
+              active: customer.status === statusEnum.ATIVO,
+              inactive: customer.status === statusEnum.INATIVO
+            }"
+          ></div>
+          <span class="text-status">{{ customer.status }}</span>
+        </div>
+      </td>
+      <td>
+        <app-button
+          label="EDITAR"
+          (onClick)="update(customer)"
+          [style]="{
+            backgroundColor: '#E18F53',
+            color: '#FFFFFF',
+            padding: '5px 18px',
+            borderRadius: '5px',
+            fontSize: '15px'
+          }"
+        />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="pagination">
+  <span class="pagination-info"
+    >Exibindo
+    {{
+      pagination.data[pagination.currentPage].length > customerService.customers.length
+        ? customerService.customers.length
+        : pagination.data[pagination.currentPage].length
+    }}
+    de {{ customerService.customers.length }} clientes</span
+  >
+  <div class="pagination-pages">
+    <button
+      *ngFor="let page of pagination.pages"
+      class="pagination-button"
+      [ngClass]="{ selected: pagination.currentPage === page }"
+      (click)="setCurrentPage(page)"
+    >
+      {{ page + 1 }}
+    </button>
+  </div>
+</div>

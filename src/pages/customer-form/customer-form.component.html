@@ -1,0 +1,44 @@
+<div class="form-wrapper">
+  <app-input-label label="Nome">
+    <app-input
+      [control]="CONTROL('name')"
+      [hasError]="checkIfFieldHasError(CONTROL('name'))"
+    />
+  </app-input-label>
+  <app-field-error
+    *ngIf="checkIfFieldHasError(CONTROL('name'))"
+    [type]="getFieldErrorType(CONTROL('name'))"
+  />
+
+  <app-input-label label="CNPJ">
+    <app-input
+      [control]="CONTROL('cnpj')"
+      [hasError]="checkIfFieldHasError(CONTROL('cnpj'))"
+      mask="000.000.000/0000-00"
+    />
+  </app-input-label>
+  <app-field-error
+    *ngIf="checkIfFieldHasError(CONTROL('cnpj'))"
+    [type]="getFieldErrorType(CONTROL('cnpj'))"
+  />
+
+  <app-input-label label="Status">
+    <app-select [control]="CONTROL('status')" [options]="statusOptions" />
+  </app-input-label>
+
+  <div class="footer">
+    <app-button
+      label="SALVAR"
+      (onClick)="save()"
+      [style]="{
+        backgroundColor: '#3AB72F',
+        color: '#FFFFFF',
+        width: '91px',
+        justifyContent: 'center',
+        padding: '5px 0px',
+        borderRadius: '5px',
+        fontSize: '15px'
+      }"
+    />
+  </div>
+</div>

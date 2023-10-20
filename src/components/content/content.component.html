@@ -1,0 +1,40 @@
+<main>
+  <section>
+    <div class="content-header">
+      <div>
+        <app-icon-provider
+          path="/icons/user.svg"
+          height="23px"
+          width="23px"
+        ></app-icon-provider>
+        <h1 class="title">{{ getScreenTitle() }}</h1>
+      </div>
+      <div *ngIf="contentService.currentScreen === screenEnum.LIST">
+        <app-button
+          label="NOVO"
+          [icon]="{
+            path: '/icons/plus.svg',
+            height: '19px',
+            width: '19px'
+          }"
+          (onClick)="add()"
+          [style]="{
+            backgroundColor: '#4486EA',
+            color: '#FFFFFF',
+            width: '91px',
+            justifyContent: 'center',
+            padding: '5px 0px',
+            borderRadius: '5px',
+            fontSize: '15px'
+          }"
+        />
+      </div>
+    </div>
+    <app-customer-list
+      *ngIf="contentService.currentScreen === screenEnum.LIST"
+    ></app-customer-list>
+    <app-customer-form
+      *ngIf="contentService.currentScreen === screenEnum.FORM"
+    ></app-customer-form>
+  </section>
+</main>

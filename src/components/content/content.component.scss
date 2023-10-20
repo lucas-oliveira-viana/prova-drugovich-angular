@@ -1,0 +1,68 @@
+@import "../../shared/styles/responsive.scss";
+
+$background-color: #f6f6f6;
+
+:host {
+  display: block;
+  height: calc(100% - 85px);
+}
+
+main {
+  height: 100%;
+  background-color: $background-color;
+}
+
+section {
+  overflow: auto;
+  background-color: $background-color;
+
+  @include smartphone {
+    padding: 12.5px 50px;
+  }
+
+  @include tablet {
+    padding: 35px 100px;
+  }
+
+  @include largeDesktop {
+    padding: 70px 200px;
+  }
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+
+  @include smartphone() {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+  }
+
+  & div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    &:first-child {
+      padding-left: 13px;
+    }
+
+    &:last-child {
+      padding-right: 13px;
+    }
+  }
+}
+
+.title {
+  font-weight: 400;
+  font-size: 27px;
+
+  @include smartphone() {
+    font-size: 22px;
+  }
+}

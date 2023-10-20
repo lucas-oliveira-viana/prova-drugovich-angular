@@ -1,0 +1,15 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 312px;
+}
+
+app-button {
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}

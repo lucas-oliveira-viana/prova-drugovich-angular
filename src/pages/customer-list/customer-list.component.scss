@@ -1,0 +1,167 @@
+@import "../../shared/styles/responsive.scss";
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+}
+
+thead {
+  display: none;
+}
+
+tbody > tr {
+  background: #fff;
+  border-spacing: 0px 10px;
+
+  & > td {
+    border-spacing: 0px 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
+
+tr {
+  & > td {
+    &:first-child {
+      padding-left: 13px;
+    }
+
+    &:last-child {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 13px;
+    }
+  }
+}
+
+.row {
+  &-name {
+    white-space: nowrap;
+    width: 1%;
+  }
+
+  &-cnpj {
+    padding-left: 15px;
+  }
+
+  &-status > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+.text {
+  &-cnpj {
+    font-size: 12px;
+  }
+
+  &-status {
+    font-size: 12px;
+  }
+}
+
+.status-circle {
+  width: 14px;
+  height: 14px;
+  background-color: gray;
+  border-radius: 50%;
+
+  &.active {
+    background-color: #2acc30;
+  }
+
+  &.inactive {
+    background-color: #ec2424;
+  }
+}
+
+.pagination {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+
+  @include smartphone() {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+  }
+
+  &-pages {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &-info {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  &-button {
+    border: 1px solid #000000;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &.selected {
+      background-color: #000000;
+      color: #f6f6f6;
+    }
+
+    &:hover {
+      background-color: #000000;
+      color: #f6f6f6;
+    }
+  }
+}
+
+@include smartphone {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .row {
+    &-name {
+      width: auto;
+    }
+
+    &-status {
+      padding-left: 15px
+    }
+  }
+}
