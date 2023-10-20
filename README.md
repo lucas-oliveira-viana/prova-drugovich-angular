@@ -12,8 +12,11 @@ Esta aplicação foi desenvolvida utilizando o Framework Angular na versão 16. 
 
 Antes de começar, certifique-se de atender aos seguintes requisitos:
 
-Node.js instalado
-Angular CLI instalado: Você pode instalá-lo com o seguinte comando: npm install -g @angular/cli
+Node.js instalado.
+Angular CLI instalado: Você pode instalá-lo com o seguinte comando:
+```bash
+npm install -g @angular/cli
+```
 
 Ou, caso opte por executar esse projeto com docker, deve possui-lo no seu computador.
 
