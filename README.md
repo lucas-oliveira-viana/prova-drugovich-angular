@@ -24,11 +24,7 @@ Ou, caso opte por executar esse projeto com docker, deve possui-lo no seu comput
 
 ### Padrão
 
-Clone este repositório:
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
+Clone este repositório.
 
 Navegue até o diretório do projeto:
 
