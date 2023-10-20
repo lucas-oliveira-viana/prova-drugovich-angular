@@ -54,3 +54,17 @@ Abra um navegador e acesse http://localhost:4200/ para visualizar a aplicação.
 Execute o comando ```docker-compose up``` para executar o projeto
 
 Abra um navegador e acesse http://localhost:4200/ para visualizar a aplicação.
+
+### Outros comandos
+
+Comando para execução de testes:
+
+```bash
+ng test
+```
+
+Comando para geração do bundle/artefato:
+
+```bash
+ng build
+```
