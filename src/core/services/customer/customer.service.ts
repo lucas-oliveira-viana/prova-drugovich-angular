@@ -1,9 +1,9 @@
 import { Injectable } from "@angular/core";
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from "@angular/forms";
-import { StatusEnum } from "../../constants";
-import { Customer } from "src/pages/customer-list/customer-list.interface";
 import { HttpClient } from "@angular/common/http";
 import { lastValueFrom } from "rxjs";
+import { Customer } from "src/app/pages/customer-list/customer-list.interface";
+import { StatusEnum } from "src/shared/constants";
 
 @Injectable()
 export class CustomerService {

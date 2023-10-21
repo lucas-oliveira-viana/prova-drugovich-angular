@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContentComponent } from './content.component';
-import { CustomerListModule } from 'src/pages/customer-list/customer-list.module';
-import { CustomerFormModule } from 'src/pages/customer-form/customer-form.module';
 import { ContentService } from './content.service';
-import { IconProviderModule } from '../icon-provider/icon-provider.module';
-import { ButtonModule } from '../button/button.module';
+import { ButtonModule } from 'src/shared/components/button/button.module';
+import { IconProviderModule } from 'src/shared/components/icon-provider/icon-provider.module';
+import { CustomerFormModule } from 'src/app/pages/customer-form/customer-form.module';
+import { CustomerListModule } from 'src/app/pages/customer-list/customer-list.module';
 
 @NgModule({
   declarations: [

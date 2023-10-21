@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Customer } from './customer-list.interface';
 import { ScreenEnum, StatusEnum } from 'src/shared/constants';
-import { CustomerService } from 'src/shared/services/customer/customer.service';
-import { ContentService } from 'src/components/content/content.service';
 import { IPagination } from 'src/shared/constants';
+import { CustomerService } from 'src/core/services/customer/customer.service';
+import { ContentService } from 'src/core/components/content/content.service';
 
 @Component({
   selector: 'app-customer-list',

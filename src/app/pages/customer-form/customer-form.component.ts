@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, UntypedFormControl } from '@angular/forms';
-import { ContentService } from 'src/components/content/content.service';
+import { ContentService } from 'src/core/components/content/content.service';
+import { CustomerService } from 'src/core/services/customer/customer.service';
 import { ScreenEnum, StatusEnum } from 'src/shared/constants';
-import { CustomerService } from 'src/shared/services/customer/customer.service';
 
 @Component({
   selector: 'app-customer-form',
