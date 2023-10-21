@@ -1,8 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { HeaderModule } from 'src/components/header/header.module';
-import { ContentModule } from 'src/components/content/content.module';
+import { HeaderModule } from 'src/core/components/header/header.module';
+import { ContentModule } from 'src/core/components/content/content.module';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({

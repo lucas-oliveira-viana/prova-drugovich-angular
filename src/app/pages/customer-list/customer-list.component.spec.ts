@@ -2,10 +2,10 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CustomerListComponent } from './customer-list.component';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'src/components/button/button.module';
 import { CnpjFormatModule } from 'src/shared/pipes/cnpj-format/cnpj-format.module';
-import { CustomerService } from 'src/shared/services/customer/customer.service';
-import { ContentService } from 'src/components/content/content.service';
+import { ButtonModule } from 'src/shared/components/button/button.module';
+import { CustomerService } from 'src/core/services/customer/customer.service';
+import { ContentService } from 'src/core/components/content/content.service';
 
 describe('CustomerListComponent', () => {
   let component: CustomerListComponent;

@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
 import { CommonModule } from '@angular/common';
-import { IconProviderModule } from '../icon-provider/icon-provider.module';
+import { IconProviderModule } from 'src/shared/components/icon-provider/icon-provider.module';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
