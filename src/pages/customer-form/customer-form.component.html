@@ -1,30 +1,36 @@
 <div class="form-wrapper">
-  <app-input-label label="Nome">
-    <app-input
-      [control]="CONTROL('name')"
-      [hasError]="checkIfFieldHasError(CONTROL('name'))"
-    />
-  </app-input-label>
-  <app-field-error
+  <div>
+    <app-input-label label="Nome">
+      <app-input
+        [control]="CONTROL('name')"
+        [hasError]="checkIfFieldHasError(CONTROL('name'))"
+      />
+    </app-input-label>
+    <app-field-error
     *ngIf="checkIfFieldHasError(CONTROL('name'))"
     [type]="getFieldErrorType(CONTROL('name'))"
   />
+  </div>
 
-  <app-input-label label="CNPJ">
-    <app-input
-      [control]="CONTROL('cnpj')"
-      [hasError]="checkIfFieldHasError(CONTROL('cnpj'))"
-      mask="000.000.000/0000-00"
+  <div>
+    <app-input-label label="CNPJ">
+      <app-input
+        [control]="CONTROL('cnpj')"
+        [hasError]="checkIfFieldHasError(CONTROL('cnpj'))"
+        mask="000.000.000/0000-00"
+      />
+    </app-input-label>
+    <app-field-error
+      *ngIf="checkIfFieldHasError(CONTROL('cnpj'))"
+      [type]="getFieldErrorType(CONTROL('cnpj'))"
     />
-  </app-input-label>
-  <app-field-error
-    *ngIf="checkIfFieldHasError(CONTROL('cnpj'))"
-    [type]="getFieldErrorType(CONTROL('cnpj'))"
-  />
+  </div>
 
-  <app-input-label label="Status">
-    <app-select [control]="CONTROL('status')" [options]="statusOptions" />
-  </app-input-label>
+  <div>
+    <app-input-label label="Status">
+      <app-select [control]="CONTROL('status')" [options]="statusOptions" />
+    </app-input-label>
+  </div>
 
   <div class="footer">
     <app-button

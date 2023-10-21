@@ -30,13 +30,10 @@ export class CustomerService {
 
         this.customers = await lastValueFrom(request$)
 
-        console.log(this.customers)
-
         this.initialFgValue = this.fg.value;
     }
 
     add(customer: Customer) {
-        console.log(this.customerToEditId)
         if (this.customerToEditId != null) {
             this.customers[this.customerToEditId] = customer;
             this.customerToEditId = null;
