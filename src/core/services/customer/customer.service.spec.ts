@@ -1,10 +1,10 @@
 import { TestBed } from "@angular/core/testing";
 import { HttpClientTestingModule, HttpTestingController } from "@angular/common/http/testing";
 import { CustomerService } from "./customer.service";
-import { Customer } from "src/pages/customer-list/customer-list.interface";
 import { HttpClient } from "@angular/common/http";
 import { of } from "rxjs";
 import { StatusEnum } from "src/shared/constants";
+import { Customer } from "src/app/pages/customer-list/customer-list.interface";
 
 describe('CustomerService', () => {
     let service: CustomerService;
