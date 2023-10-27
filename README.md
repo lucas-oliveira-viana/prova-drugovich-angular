@@ -1,4 +1,4 @@
-# prova-drugovich-angular
+# test-drugovich-angular
 
 ## Motivação
 
